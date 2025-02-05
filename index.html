@@ -6,106 +6,42 @@
     <meta name="description" content="Alat modern untuk kebutuhan Anda.">
     <title>Tools By Yunus Alwy🔥</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Styling Umum */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1a1a1a;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #00bfff;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .tools-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .tools-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 400px;
-            margin: auto;
-        }
-
-        /* Styling untuk Card */
+        /* Styling untuk kotakan label */
         .tools-card {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 15px;
-            border-radius: 8px;
+            padding: 12px;
+            border-radius: 5px;
             text-decoration: none;
             color: white;
-            font-weight: 500;
-            background-color: #2c2c2c;
-            border: 1px solid #444;
-            transition: 0.3s;
-            font-size: 16px;
+            font-weight: bold;
+            position: relative;
         }
-
-        .tools-card:hover {
-            background-color: #333;
-            transform: scale(1.02);
+        .error {
+            background-color: #ff4d4d; /* Merah */
         }
-
-        /* Kotak Label */
+        .active {
+            background-color: #4CAF50; /* Hijau */
+        }
         .status-label {
             padding: 3px 7px;
             border-radius: 3px;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: bold;
             color: white;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            right: 10px;
         }
-
-        /* Warna label */
         .error .status-label {
-            background-color: #b30000;
+            background-color: #b30000; /* Merah tua */
         }
-
         .active .status-label {
-            background-color: #1f7a1f;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-            color: #aaa;
+            background-color: #1f7a1f; /* Hijau tua */
         }
     </style>
 </head>
