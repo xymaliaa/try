@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Styling untuk kotakan label */
+        /* Styling umum untuk card */
         .tools-card {
             display: flex;
             justify-content: space-between;
@@ -19,27 +19,25 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
-            position: relative;
+            background-color: #2c2c2c; /* Warna default tanpa efek status */
+            border: 1px solid #444; /* Tambah border biar lebih rapi */
         }
-        .error {
-            background-color: #ff4d4d; /* Merah */
-        }
-        .active {
-            background-color: #4CAF50; /* Hijau */
-        }
+
+        /* Styling kotak status */
         .status-label {
             padding: 3px 7px;
             border-radius: 3px;
             font-size: 12px;
             font-weight: bold;
             color: white;
-            background-color: rgba(0, 0, 0, 0.2);
-            position: absolute;
-            right: 10px;
         }
+
+        /* Warna merah untuk ERROR */
         .error .status-label {
             background-color: #b30000; /* Merah tua */
         }
+
+        /* Warna hijau untuk AKTIF */
         .active .status-label {
             background-color: #1f7a1f; /* Hijau tua */
         }
