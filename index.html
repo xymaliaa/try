@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Tambahkan gaya untuk label status */
+        .tools-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .error {
+            background-color: #ff4d4d; /* Merah */
+        }
+        .active {
+            background-color: #4CAF50; /* Hijau */
+        }
+        .status-label {
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,19 +50,26 @@
             <div class="coming-soon">COMING SOON TOOLS SELANJUTNYA..</div>
             <h3 class="tools-title">COBAIN BANG:</h3>
             <div class="tools-container">
-                <a href="" target="_blank" class="tools-card">
+                <!-- Free Followers (Error) -->
+                <a href="#" class="tools-card error">
                     <p>FOLLOWERS & LIKES TIKTOK GRATIS!</p>
+                    <span class="status-label">ERROR</span>
                 </a>  
 
-                <a href="https://cek-rekbank.vercel.app" target="_blank" class="tools-card">
+                <!-- Tool Aktif -->
+                <a href="https://cek-rekbank.vercel.app" target="_blank" class="tools-card active">
                     <p>CEK REKENING & E-WALLET</p>
+                    <span class="status-label">AKTIF</span>
                 </a>  
                 
-                  <a href="https://ttstalk.vercel.app" target="_blank" class="tools-card">
+                <a href="https://ttstalk.vercel.app" target="_blank" class="tools-card active">
                     <p>STALKING TIKTOK</p>
-              </a>
-                <a href="http://alwywoii.ct.ws/generate-images" target="_blank" class="tools-card">
+                    <span class="status-label">AKTIF</span>
+                </a>
+
+                <a href="http://alwywoii.ct.ws/generate-images" target="_blank" class="tools-card active">
                     <p>GENERATE GAMBAR ANIME (HD+)</p>
+                    <span class="status-label">AKTIF</span>
                 </a>
             </div>
         </section>
