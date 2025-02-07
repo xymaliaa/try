@@ -5,45 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alat modern untuk kebutuhan Anda.">
     <title>Tools By Yunus Alwy🔥</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
-        /* Styling umum untuk card */
+        /* Styling dasar */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            background-color: #222;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .icon {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 30px;
+        }
+
+        /* Container untuk tools */
+        .tools-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Styling untuk setiap card tool */
         .tools-card {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 12px;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
             color: white;
             font-weight: bold;
-            background-color: #2c2c2c; /* Warna default tanpa efek status */
-            border: 1px solid #444; /* Tambah border biar lebih rapi */
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            transition: 0.3s;
         }
 
-        /* Styling kotak status */
+        .tools-card:hover {
+            background-color: #383838;
+        }
+
+        /* Status label */
         .status-label {
-            padding: 3px 7px;
-            border-radius: 3px;
+            padding: 4px 8px;
+            border-radius: 5px;
             font-size: 12px;
             font-weight: bold;
             color: white;
         }
 
-        /* Warna merah untuk ERROR */
+        /* Warna status */
         .error .status-label {
-            background-color: #b30000; /* Merah tua */
+            background-color: #b30000;
         }
 
-        /* Warna hijau untuk AKTIF */
         .active .status-label {
-            background-color: #1f7a1f; /* Hijau tua */
+            background-color: #1f7a1f;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #222;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>PROJECT.GABUT</h1>
         <div class="social-icons">
@@ -53,11 +111,15 @@
         </div>
     </header>
     
+    <!-- Konten Utama -->
     <main>
         <section class="hero">
             <div class="coming-soon">COMING SOON TOOLS SELANJUTNYA..</div>
             <h3 class="tools-title">COBAIN BANG:</h3>
+            
+            <!-- Container untuk tools -->
             <div class="tools-container">
+                
                 <!-- Free Followers (Error) -->
                 <a href="#" class="tools-card error">
                     <p>FOLLOWERS & LIKES TIKTOK GRATIS!</p>
@@ -83,8 +145,10 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p class="footer-text">by alwywoii👾</p>
     </footer>
+
 </body>
 </html>
