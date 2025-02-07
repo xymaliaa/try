@@ -83,7 +83,7 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: #ffcc00; /* Warna kuning */
-    animation: blink 1s infinite; /* Animasi kedip setiap 1 detik */
+    animation: blink 3s infinite; /* Animasi kedip setiap 1 detik */
     margin-bottom: 15px;
 }
 .active .status-label {
